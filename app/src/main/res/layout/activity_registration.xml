@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#131313"
+    android:orientation="vertical"
+    tools:context=".activities.RegistrationActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorComponent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="8dp"
+                android:text="Регистрация"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/cont_btn"
+                android:layout_width="96dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:backgroundTint="@color/colorComponent"
+                android:text="Далее"
+                android:textAllCaps="false"
+                android:textColor="#FFF" />
+
+        </FrameLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="39dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/name_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:background="@color/colorComponent"
+                    android:hint="Имя"
+                    android:paddingStart="48dp"
+                    android:textColorHint="#c3c3c3"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+                <EditText
+                    android:id="@+id/surname_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorComponent"
+                    android:textColor="#fff"
+                    android:hint="Фамилия"
+                    android:paddingStart="48dp"
+                    android:textColorHint="#c3c3c3"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="35dp">
+                <ImageView
+                    android:id="@+id/user_photo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="#131313"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/useravatar" />
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/nick_edit"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorComponent"
+        android:hint="Имя пользователя (необязательно)"
+        android:textColor="#fff"
+        android:paddingStart="12dp"
+        android:textColorHint="#c3c3c3"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/mail_edit"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:textColor="#fff"
+        android:background="@color/colorComponent"
+        android:hint="Email"
+        android:paddingStart="12dp"
+        android:textColorHint="#c3c3c3"
+        android:textSize="16sp" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/password_edit"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorComponent"
+        android:hint="Пароль"
+        android:textColor="#fff"
+        android:paddingStart="12dp"
+        android:textColorHint="#c3c3c3"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
